@@ -35,6 +35,7 @@ void avgOddArray(const int[], const int, int&);
 int main() {
 	int choice;
 	const int SIZE = 10;
+	int avgOdd = 0;
 
 	// Initialize array price
 	int price[SIZE] = { 12, 4, 8, 1, 17, 2, 4, 2, 9, 1 };
@@ -60,13 +61,15 @@ int main() {
 			break;
 			// Sum the odd values in the array.
 		case 4:
-			
+			sumOddArray(total, SIZE);
 			break;
+			// true if all values in array are positive.
 		case 5:
-
+			isAllPositive(total, SIZE);
 			break;
+			// find the average of odd values in the array.
 		case 6:
-
+			avgOddArray(total, SIZE, avgOdd);
 			break;
 			// Exit
 		case 7:
