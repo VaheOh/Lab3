@@ -52,7 +52,7 @@ int main() {
 			break;
 			// Calculate total
 		case 2:
-			multArrays(quantity, total, price, SIZE);
+			multArrays(quantity, price, total, SIZE);
 			break;
 			// Print total
 		case 3:
@@ -126,7 +126,7 @@ void multArrays(const int arrQuantity[], const int arrPrice[], int arrTotal[], c
 	assert(size > 0);
 
 	for (int i = 0; i <= size; ++i) {
-		arrTotal[i] = arrQuantity[i] + arrPrice[i + 1];
+		arrTotal[i] = arrQuantity[i] * arrPrice[i + 1];
 	}
 }
 
