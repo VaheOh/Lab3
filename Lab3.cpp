@@ -58,8 +58,18 @@ int main() {
 		case 3:
 			displayArray(total, SIZE);
 			break;
-			// Exit
+			// Sum the odd values in the array.
 		case 4:
+			
+			break;
+		case 5:
+
+			break;
+		case 6:
+
+			break;
+			// Exit
+		case 7:
 			// No code needed
 			break;
 		default:
@@ -135,7 +145,7 @@ void multArrays(const int arrQuantity[], const int arrPrice[], int arrTotal[], c
  * array. In addition the function sums up the value of all the elements and
  * print the total.
  * <BR>
- * @param ar The array containing the values
+ * @param arr The array containing the values
  * @param size The size of the array.
  */
 void displayArray(const int arr[], const int size) {
@@ -149,10 +159,22 @@ void displayArray(const int arr[], const int size) {
 	cout << "\nThe total is: " << sum;
 }
 
-// Sums the odd numbers in the array and returns the result
+/**
+ * <code>sumOddArray</code> sums the odd numbers in the array.
+ * <BR>
+ * @param arr The array containing the values
+ * @param size The size of the array.
+ */
 int sumOddArray(const int arr[], const int size) {
-	//@TODO: You will need to complete this. Including makeing the appropriate comment header
-	return 0;
+	int oddSum = 0;
+
+	for (int i = 0; i < size; ++i) {
+		if (arr[i] % 2 != 0) {
+			oddSum += arr[i];
+		}
+	}
+
+	return oddSum;
 }
 
 // If all the values in the array are positive return true
